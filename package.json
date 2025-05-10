@@ -1,6 +1,7 @@
 {
   "name": "my-env-app",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,7 +11,7 @@
   },
   "dependencies": {
     "@prisma/client": "^6.7.0",
-    "next": "15.3.2",
+    "next": "^15.3.2",
     "prisma": "^6.7.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -26,5 +27,8 @@
     "eslint-config-next": "15.3.2",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.cjs"
   }
 }
